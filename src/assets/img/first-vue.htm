@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://localhost:8080/#/ -->
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>first-vue</title>
+  <style type="text/css">
+    * { margin: 0; padding: 0; }
+    html,body { background: #eee; }
+    ul,li { list-style: none; }
+    a { text-decoration: none; }
+    img { vertical-align: middle; }
+    /* 跳转页面动画 */
+    .slide-enter,
+    .slide_back-enter {
+      position: absolute;
+      width: 100%;
+    }
+    .slide-leave,
+    .slide_back-leave {
+      position: absolute;
+      width: 100%;
+    }
+    .slide-enter-active,
+    .slide_back-enter-active {
+      transition: all 0.3s linear;
+    }
+    .slide-leave-active {
+      position: absolute;
+      transition: all 0.3s linear;
+      transform: translate(-100%);
+    }
+    .slide-enter{
+      transform: translateX(100%);
+    }
+    .slide_back-leave-active {
+      position: absolute;
+      transition: all 0.3s linear;
+      transform: translate(100%);
+    }
+    .slide_back-enter {
+      transform: translateX(-100%);
+    }
+  </style>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceURL=undefined */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJIb21lLnZ1ZSIsInNvdXJjZVJvb3QiOiIifQ== */</style><style type="text/css">
+.header {
+  height: 0.88rem;
+}
+.header_inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-width: 640px;
+  height: 0.88rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 0.24rem;
+  border-bottom: 0.02rem solid #80ccd6;
+  background-color: #fff;
+}
+.header_cont {
+  text-align: center;
+  padding: 0 0.4rem;
+  line-height: 0.86rem;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*# sourceURL=/Users/yuyue/Desktop/vue/FirstVue/src/components/src/components/HomeHeader.vue */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy95dXl1ZS9EZXNrdG9wL3Z1ZS9GaXJzdFZ1ZS9zcmMvY29tcG9uZW50cy9zcmMvY29tcG9uZW50cy9Ib21lSGVhZGVyLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBVUE7RUFDQSxnQkFBQTtDQUNBO0FBQ0E7RUFDQSxnQkFBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EsK0JBQUE7VUFBQSx1QkFBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtFQUNBLHFDQUFBO0VBQ0EsdUJBQUE7Q0FDQTtBQUNBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLHdCQUFBO0VBQ0Esb0JBQUE7Q0FDQSIsImZpbGUiOiJIb21lSGVhZGVyLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIjwhLS0gSG9tZUhlYWRlci52dWUgLS0+XG48dGVtcGxhdGU+XG4gIDxoZWFkZXIgY2xhc3M9XCJoZWFkZXJcIj5cbiAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyX2lubmVyXCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyX2NvbnRcIj7kuLvpobU8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgPC9oZWFkZXI+XG48L3RlbXBsYXRlPlxuXG48c3R5bGU+XG4gIC5oZWFkZXIge1xuICAgIGhlaWdodDogMC44OHJlbTtcbiAgfVxuICAuaGVhZGVyX2lubmVyIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgcmlnaHQ6IDA7XG4gICAgei1pbmRleDogOTk7XG4gICAgbWF4LXdpZHRoOiA2NDBweDtcbiAgICBoZWlnaHQ6IDAuODhyZW07XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgICBwYWRkaW5nOiAwIDAuMjRyZW07XG4gICAgYm9yZGVyLWJvdHRvbTogMC4wMnJlbSBzb2xpZCAjODBjY2Q2O1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIH1cbiAgLmhlYWRlcl9jb250IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMCAwLjRyZW07XG4gICAgbGluZS1oZWlnaHQ6IDAuODZyZW07XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgfVxuPC9zdHlsZT5cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+<body>
+<div id="app"><div class="container"><header class="header"><div class="header_inner"><div class="header_cont">主页</div></div></header> <div class="content"><ul class="cont_ul"><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">大学</p> <p class="lp_li_price">￥129.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">中庸</p> <p class="lp_li_price">￥256.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">论语</p> <p class="lp_li_price">￥399.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">孟子</p> <p class="lp_li_price">￥998.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">道德经</p> <p class="lp_li_price">￥99.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">老子</p> <p class="lp_li_price">￥89.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">金刚金</p> <p class="lp_li_price">￥188.00元</p></a></li><li class="sec_li"><a href="http://localhost:8080/#/detail" class="lp_li_a"><div class="lp_li_imgWrap"><img src="./first-vue_files/monsterHunter.81e6946.jpg" alt=""></div> <p class="lp_li_name">易筋经</p> <p class="lp_li_price">￥999.98元</p></a></li></ul></div></div></div>
+
+<script type="text/javascript">
+
+  // 计算html的font-size
+  (function(){
+    function resizeBaseFontSize(){
+      var rootHtml = document.documentElement,
+        deviceWidth = rootHtml.clientWidth;
+
+      if(deviceWidth > 640){
+        deviceWidth = 640;
+      }
+
+      rootHtml.style.fontSize = deviceWidth / 7.5 + "px";
+    }
+
+    resizeBaseFontSize();
+
+    window.addEventListener("resize", resizeBaseFontSize, false);
+    window.addEventListener("orientationchange", resizeBaseFontSize, false);
+  })();
+</script>
+<script type="text/javascript" src="./first-vue_files/app.js"></script>
+
+</body></html>
