@@ -9,6 +9,15 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+//请求本地json数据
+const express = require('express')
+const app = express()
+var appData = require("../db.json")
+var seller = appData.seller //获取对应的本地数据
+var goods = appData.goods
+var ratings  = appData.ratings
+var apiRoutes = express.Router()
+app.use('/api',apiRoutes)
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -44,6 +53,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       poll: config.dev.poll,
     }
   },
+
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
@@ -64,7 +74,32 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new webpack.LoaderOptionsPlugin({
+      // options: {
+      //   //添加本地json 请求配置
+      //   before(app){
+      //     app.get('/api/seller',(req,res) =>{
+      //       res.json({
+      //         errno:0,
+      //         data:seller
+      //       })
+      //     }),
+      //       app.get('/api/goods',(req,res) =>{
+      //         res.json({
+      //           errno:0,
+      //           data:goods
+      //         })
+      //       }),
+      //       app.get('/api/ratings',(res,req) => {
+      //         res.json({
+      //           errno:0,
+      //           data:ratings
+      //         })
+      //       })
+      //   },
+      //}
+    })
   ]
 })
 

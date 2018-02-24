@@ -9,7 +9,8 @@
         <list
         v-for="item in items"
         :price="item.price"
-        :title="item.title">
+        :title="item.title"
+        :imgUrl="item.imgUrl">
 
         </list>
       </ul>
@@ -30,14 +31,14 @@
       data(){
           return{
               items:[
-                { price:"129.00",title:"怪物猎人世界" },
-                { price:"256.00",title:"怪物猎人世界" },
-                { price:"399.00",title:"怪物猎人世界" },
-                { price:"998.00",title:"怪物猎人世界" },
-                { price:"99.00",title:"怪物猎人世界" },
-                { price:"89.00",title:"怪物猎人世界" },
-                { price:"188.00",title:"怪物猎人世界" },
-                { price:"999.98",title:"怪物猎人世界" },
+//                { price:"129.00",title:"怪物猎人世界",imgUrl:"../assets/img/monsterHunter.jpg"},
+//                { price:"256.00",title:"怪物猎人世界",imgUrl:"../assets/logo.png" },
+//                { price:"399.00",title:"怪物猎人世界" },
+//                { price:"998.00",title:"怪物猎人世界" },
+//                { price:"99.00",title:"怪物猎人世界" },
+//                { price:"89.00",title:"怪物猎人世界" },
+//                { price:"188.00",title:"怪物猎人世界" },
+//                { price:"999.98",title:"怪物猎人世界" },
               ]
           }
       },
@@ -45,6 +46,12 @@
     components:{
           HomeHeader,
           List
+    },
+    created(){
+      this.$http.get('../static/db.json').then((data)=>{
+        console.log(data);
+        this.items = data.body.items
+      })
     }
   }
 </script>

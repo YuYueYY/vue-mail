@@ -5,7 +5,9 @@ import Vue from 'vue'
 
 // 导入 vue-router，并使用
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 // 导入 pages 下的 Home.vue
 import Home from './pages/Home'
@@ -25,7 +27,8 @@ const routes = [
 
 // 创建路由实例
 const router = new VueRouter({
-  routes
+  routes ,
+  mode:"history"
 })
 
 // 创建 Vue 实例

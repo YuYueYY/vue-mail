@@ -3,7 +3,7 @@
   <li class="sec_li">
     <router-link to="/detail" class="lp_li_a">
       <div class="lp_li_imgWrap">
-        <img src="../assets/img/monsterHunter.jpg" alt="">
+        <img v-bind:src="imgUrl" alt="">
       </div>
       <p class="lp_li_name">{{ title }}</p>
       <p class="lp_li_price">￥{{ price }}元</p>
@@ -12,7 +12,7 @@
 </template>
 <script>
   export default {
-      props:['price','title']
+      props:['price','title','imgUrl']
   }
 </script>
 <style scoped>
@@ -49,8 +49,3 @@
   }
 </style>
 
-<script>
-  export default {
-    props: ['price', 'title']
-  }
-</script>
