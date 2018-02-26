@@ -65,6 +65,7 @@
       goBack(){
         window.history.back();
       }
-    }
+    },
+
   }
 </script>

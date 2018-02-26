@@ -1,6 +1,6 @@
 <!-- list.vue -->
 <template>
-  <li class="sec_li">
+  <li class="sec_li" v-on:click="sendContent">
     <router-link to="/detail" class="lp_li_a">
       <div class="lp_li_imgWrap">
         <img v-bind:src="imgUrl" alt="">
@@ -11,8 +11,16 @@
   </li>
 </template>
 <script>
+  //import Detail from '../../pages/Detail'
+  import store from '../../vuex/store'
   export default {
-      props:['price','title','imgUrl']
+      props:['price','title','imgUrl','content'],
+      methods:{
+        sendContent:function () {
+          this.$store.commit('newAuthor',this.content)
+        }
+      },
+    store
   }
 </script>
 <style scoped>

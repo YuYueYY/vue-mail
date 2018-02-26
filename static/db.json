@@ -1,6 +1,6 @@
 {
   "items":[
-    { "price":"129.00","title":"怪物猎人世界","imgUrl":"./static/img/monsterHunter.jpg"},
+    { "price":"129.00","title":"怪物猎人世界","imgUrl":"./static/img/monsterHunter.jpg","content":"测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，"},
     { "price":"256.00","title":"巫师3","imgUrl":"./static/img/wushi.jpg" },
     { "price":"399.00","title":"美国末日","imgUrl":"./static/img/thelastofus.jpg"},
     { "price":"998.00","title":"最终幻想15","imgUrl":"./static/img/finalfantasy.jpg" },

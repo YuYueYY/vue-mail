@@ -10,8 +10,9 @@
         v-for="item in items"
         :price="item.price"
         :title="item.title"
-        :imgUrl="item.imgUrl">
-
+        :imgUrl="item.imgUrl"
+        :content="item.content"
+        >
         </list>
       </ul>
     </div>
@@ -24,9 +25,9 @@
 
 <script>
   //导入用到的子组件
-  import HomeHeader from '../components/HomeHeader'
-  import List from '../components/List'
-
+  import HomeHeader from '../components/HomeComponent/HomeHeader'
+  import List from '../components/HomeComponent/List'
+  import Detail from './Detail'
   export default{
       data(){
           return{
@@ -45,13 +46,14 @@
     //在components 字段中，包含导入的子组件
     components:{
           HomeHeader,
-          List
+          List,
+          Detail
     },
     created(){
       this.$http.get('../static/db.json').then((data)=>{
-        console.log(data);
         this.items = data.body.items
       })
-    }
+    },
+
   }
 </script>

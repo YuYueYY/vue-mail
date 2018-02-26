@@ -6,6 +6,10 @@ import Vue from 'vue'
 // 导入 vue-router，并使用
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
+import Vuex from 'vuex'
+import store from './vuex/store'
+
+Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
@@ -25,15 +29,18 @@ const routes = [
   }
 ]
 
+
 // 创建路由实例
 const router = new VueRouter({
-  routes ,
+  routes,
   mode:"history"
 })
 
 // 创建 Vue 实例
 new Vue({
   el: '#app',
+  store,
+
   data(){
     return {
       transitionName: 'slide'
