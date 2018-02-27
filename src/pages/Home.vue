@@ -12,6 +12,7 @@
         :title="item.title"
         :imgUrl="item.imgUrl"
         :content="item.content"
+        :img_detail="item.imgUrl_detail"
         >
         </list>
       </ul>

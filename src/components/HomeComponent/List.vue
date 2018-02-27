@@ -14,10 +14,11 @@
   //import Detail from '../../pages/Detail'
   import store from '../../vuex/store'
   export default {
-      props:['price','title','imgUrl','content'],
+      props:['price','title','imgUrl','content','img_detail'],
       methods:{
         sendContent:function () {
           this.$store.commit('newAuthor',this.content)
+          this.$store.commit('bigImg',this.img_detail)
         }
       },
     store
@@ -48,12 +49,14 @@
     line-height: 0.5rem;
     font-size: 16px;
     color: #333;
+    text-align: center;
   }
   .lp_li_price {
     height: 0.5rem;
     line-height: 0.5rem;
     font-size: 16px;
     color: #fb3b3b;
+    text-align: center;
   }
 </style>
 

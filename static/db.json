@@ -1,9 +1,12 @@
 {
   "items":[
-    { "price":"129.00","title":"怪物猎人世界","imgUrl":"./static/img/monsterHunter.jpg","content":"测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，测试内容，"},
-    { "price":"256.00","title":"巫师3","imgUrl":"./static/img/wushi.jpg" },
-    { "price":"399.00","title":"美国末日","imgUrl":"./static/img/thelastofus.jpg"},
-    { "price":"998.00","title":"最终幻想15","imgUrl":"./static/img/finalfantasy.jpg" },
+    { "price":"419.00","title":"怪物猎人世界","imgUrl":"./static/img/monsterHunter.jpg","content":"《怪物猎人：世界》是由CAPCOM制作发行的一款动作冒险游戏，在全球范围内都享有盛赞，本代怪物猎人发生了诸多进化，玩法与画面都有非常巨大的进步，游戏最多支持4人联机。在游戏中玩家将扮演一位猎人，需要探索一片新发现的神秘土地，关于这片土地人们知之甚少，所以将这片大陆称为“新世界”。猎人们必须利用他们的聪明才智和个人能力才能在激烈、变化多端的战斗中存活下来，并且最终成为终极猎人","imgUrl_detail":"./static/img/monsterHunter2.jpeg"},
+    { "price":"299.00","title":"巫师3","imgUrl":"./static/img/wushi.jpg",
+      "content":"《巫师3：狂猎（The Witcher 3: Wild Hunt）》是由CD Projekt RED制作，WB Games（NA）、Spike Chunsoft（JP）发行的一款由同名小说改编而成的角色扮演类单机游戏，于2015年5月19日发行，为《巫师》系列游戏作品的第三部，也是杰洛特冒险的终曲。2015年10月，获第33届金摇杆奖最佳剧情、最佳视觉设计、最佳游戏时刻，更获得了年度最佳游戏大奖。并获得IGN 2015年度最佳游戏。","imgUrl_detail":"./static/img/wushi2.jpeg"},
+    { "price":"155.00","title":"美国末日","imgUrl":"./static/img/thelastofus.jpg",
+      "content":"《最后生还者》（The Last of Us）是由著名工作室顽皮狗第二团队秘密开发两年的作品，讲述了人类因现代传染病而面临绝种危机，当环境从废墟的都市再度自然化时，幸存的人类为了生存而自相残杀的故事。但是和以往的同类题材游戏有着很大的不同，两名主角个性鲜明，在探索困境下人类的心里波动，突出放大主角们的心里活动。","imgUrl_detail":"./static/img/thelastofus2.jpg"},
+    { "price":"285.00","title":"最终幻想15","imgUrl":"./static/img/finalfantasy.jpg",
+      "content":"《最终幻想XV》以系列共通的新水晶神话为基础，同时展开独立的世界观、使用不同的视觉设计以及角色。游戏主人公诺克提斯·路西斯·凯拉姆是路西斯王国的王子，这个王族保护世界仅存的一颗水晶，并支配一个技术先进的城邦。","imgUrl_detail":"./static/img/finalfantasy2.jpg"},
     { "price":"99.00","title":"怪物猎人世界" },
     { "price":"89.00","title":"怪物猎人世界" }
   ]
